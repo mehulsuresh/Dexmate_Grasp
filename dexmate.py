@@ -17,7 +17,7 @@ from isaaclab.utils.assets import ISAACLAB_NUCLEUS_DIR
 DEXMATE_CFG = ArticulationCfg(
     spawn=sim_utils.UsdFileCfg(
         
-        usd_path=f"usd\dexmate.usd",
+        usd_path="usd/dexmate.usd",
         activate_contact_sensors=False,
         rigid_props=sim_utils.RigidBodyPropertiesCfg(
             disable_gravity=False,

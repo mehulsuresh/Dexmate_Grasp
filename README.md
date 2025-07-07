@@ -44,3 +44,9 @@ class ManagerBasedRLEnv(RLBaseEnv):
 ### Step 4: Place the dexmate_lift Repository
 
 Navigate to the source/isaaclab_tasks/isaaclab_tasks/manager_based/manipulation directory within your cloned IsaacLab repository. This is where the dexmate_lift task should reside.
+
+### To run training:
+isaaclab.bat -p scripts/reinforcement_learning/rl_games/train.py --task=Isaac-Lift-Cube-Dexmate-v0 --headless   
+
+### To run inference:
+ isaaclab.bat -p scripts/reinforcement_learning/rl_games/play.py --task=Isaac-Lift-Cube-Dexmate-v0 --num_envs=8 --checkpoint "checkpoint_file_path.pth"   
